@@ -1,6 +1,6 @@
 package PerlMol;
 
-$VERSION = '0.2500';
+$VERSION = '0.2600';
 # $Id$
 
 1;
@@ -21,7 +21,7 @@ PerlMol - Perl modules for molecular chemistry
 PerlMol is a collection of Perl modules for chemoinformatics and computational
 chemistry with the philosophy that "simple things should be simple". It should
 be possible to write one-liners that use this toolkit to do meaningful
-"molecular munging". The perlmol toolkit provides objects and methods for
+"molecular munging". The PerlMol toolkit provides objects and methods for
 representing molecules, atoms, and bonds in Perl; doing substructure matching;
 and reading and writing files in various formats.
 
@@ -31,7 +31,11 @@ What follows is an index of the relevant documentation.
 
 =head2 Tutorial
 
-L<Chemistry::Tutorial>
+=over
+
+=item L<Chemistry::Tutorial>
+
+=back
 
 =head2 Object oriented modules
 
@@ -50,6 +54,8 @@ The following modules are indented according to the class hierarchy:
 =item L<Chemistry::Pattern>
 
 =over
+
+=item L<Chemistry::FormulaPattern>
 
 =item L<Chemistry::MidasPattern>
 
@@ -87,6 +93,8 @@ The following modules are indented according to the class hierarchy:
 
 =item L<Chemistry::File::Formula>
 
+=item L<Chemistry::File::FormulaPattern>
+
 =item L<Chemistry::File::MDLMol>
 
 =item L<Chemistry::File::MidasPattern>
@@ -96,6 +104,8 @@ The following modules are indented according to the class hierarchy:
 =item L<Chemistry::File::PDB>
 
 =item L<Chemistry::File::SDF>
+
+=item L<Chemistry::File::SLN>
 
 =item L<Chemistry::File::SMARTS>
 
@@ -143,28 +153,51 @@ These are auxiliary modules for which object classes seemed overkill
 
 =back
 
+=head2 Publications
+
+Publications
+
+=over
+
+=item *
+
+F. Rosselló, G. Valiente. Chemical Graphs, Chemical Reaction Graphs, and
+Chemical Graph Transformation. To appear in Proc. 2nd Int. Workshop on
+Graph-Based Tools, Electronic Notes in Computer Science 2004 (abstract
+available at L<http://www.lsi.upc.es/%7Evaliente/abs-grabats-2004.html>).
+
+=item *
+
+Tubert-Brohman, I. Perl and Chemistry. The Perl Journal 2004-06 (subscription
+required) 
+
+=back
+
 =head1 VERSION INFORMATION
 
-This is the PerlMol bundled release version 0.2500. It includes the following
+This is the PerlMol bundled release version 0.2600. It includes the following
 distributions:
 
-    Math-VectorReal                1.02
-    Statistics-Regression          0.15
-    Chemistry-Mol                  0.25
-    Chemistry-MacroMol             0.06
-    Chemistry-InternalCoords       0.16
-    Chemistry-Ring                 0.15
-    Chemistry-Canonicalize         0.10
-    Chemistry-Pattern              0.21
-    Chemistry-Bond-Find            0.21
-    Chemistry-File-MDLMol          0.16
-    Chemistry-File-SMILES          0.41
-    Chemistry-File-PDB             0.20
-    Chemistry-MidasPattern         0.10
-    Chemistry-File-Mopac           0.15
-    Chemistry-File-SMARTS          0.11
-    Chemistry-File-XYZ             0.10
-    Chemistry-Mok                  0.22
+    Chemistry-Bond-Find             0.21
+    Chemistry-Canonicalize          0.10
+    Chemistry-File-MDLMol           0.17
+    Chemistry-File-Mopac            0.15
+    Chemistry-File-PDB              0.20
+    Chemistry-File-SLN              0.10
+    Chemistry-File-SMARTS           0.20
+    Chemistry-File-SMILES           0.42
+    Chemistry-File-XYZ              0.11
+    Chemistry-FormulaPattern        0.10
+    Chemistry-InternalCoords        0.17
+    Chemistry-MacroMol              0.06
+    Chemistry-MidasPattern          0.10
+    Chemistry-Mok                   0.23
+    Chemistry-Mol                   0.26
+    Chemistry-Pattern               0.25
+    Chemistry-Ring                  0.18
+    Math-VectorReal                 1.02
+    Parse-Yapp                      1.05
+    Statistics-Regression           0.15
 
 The version number of a PerlMol bundle is always the same as the version number
 of the included Chemistry-Mol distribution, plus two extra digits that
@@ -177,12 +210,12 @@ The PerlMol website L<http://www.perlmol.org/>
 
 =head1 AUTHOR
 
-Ivan Tubert E<lt>itub@cpan.orgE<gt>
+Ivan Tubert-Brohman E<lt>itub@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2004 Ivan Tubert. All rights reserved. This program is free
-software; you can redistribute it and/or modify it under the same terms as
+Copyright (c) 2004 Ivan Tubert.-Brohman All rights reserved. This program is
+free software; you can redistribute it and/or modify it under the same terms as
 Perl itself.
 
 =cut

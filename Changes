@@ -1,26 +1,52 @@
 Revision history for PerlMol
 
+0.2600  Aug 12 2004
+    New distributions:
+        Chemistry-File-SLN              0.10
+        Chemistry-FormulaPattern        0.10
+        Parse-Yapp                      1.05
+    Changed versions:
+        Chemistry-Mol                   0.26
+        Chemistry-InternalCoords        0.17
+        Chemistry-Ring                  0.18
+        Chemistry-Pattern               0.25
+        Chemistry-File-MDLMol           0.17
+        Chemistry-File-SMILES           0.42
+        Chemistry-File-SMARTS           0.20
+        Chemistry-File-XYZ              0.11
+        Chemistry-Mok                   0.23
+    Unchanged versions:
+        Chemistry-MacroMol              0.06
+        Chemistry-Canonicalize          0.10
+        Chemistry-Bond-Find             0.21
+        Chemistry-File-PDB              0.20
+        Chemistry-MidasPattern          0.10
+        Chemistry-File-Mopac            0.15
+        Math-VectorReal                 1.02
+        Statistics-Regression           0.15
+
+
 0.2500  Jul 03 2004
     New distributions:
-        Chemistry::File::XYZ            0.10
-        Chemistry::MidasPattern         0.10
+        Chemistry-File-XYZ              0.10
+        Chemistry-MidasPattern          0.10
     Changed versions:
-        Chemistry::File::MDLMol         0.16
-        Chemistry::File::Mopac          0.15
-        Chemistry::File::PDB            0.20
-        Chemistry::File::SMARTS         0.11
-        Chemistry::File::SMILES         0.41
-        Chemistry::InternalCoords       0.16
-        Chemistry::MacroMol             0.06
-        Chemistry::Mok                  0.22
-        Chemistry::Mol                  0.25
-        Chemistry::Ring                 0.15
+        Chemistry-File-MDLMol           0.16
+        Chemistry-File-Mopac            0.15
+        Chemistry-File-PDB              0.20
+        Chemistry-File-SMARTS           0.11
+        Chemistry-File-SMILES           0.41
+        Chemistry-InternalCoords        0.16
+        Chemistry-MacroMol              0.06
+        Chemistry-Mok                   0.22
+        Chemistry-Mol                   0.25
+        Chemistry-Ring                  0.15
     Unchanged versions:
-        Chemistry::Bond::Find           0.21
-        Chemistry::Canonicalize         0.10
-        Chemistry::Pattern              0.21
-        Math::VectorReal                1.02
-        Statistics::Regression          0.15
+        Chemistry-Bond-Find             0.21
+        Chemistry-Canonicalize          0.10
+        Chemistry-Pattern               0.21
+        Math-VectorReal                 1.02
+        Statistics-Regression           0.15
 
 
 
