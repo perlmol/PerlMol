@@ -20,27 +20,25 @@ requires(qw(
 bundle(qw(
     Math::VectorReal                1.02
     Statistics::Regression          0.15
-    Chemistry::Mol                  0.24
-    Chemistry::MacroMol             0.05
-    Chemistry::InternalCoords       0.11
-    Chemistry::Ring                 0.11
+    Chemistry::Mol                  0.25
+    Chemistry::MacroMol             0.06
+    Chemistry::InternalCoords       0.16
+    Chemistry::Ring                 0.15
     Chemistry::Canonicalize         0.10
     Chemistry::Pattern              0.21
     Chemistry::Bond::Find           0.21
-    Chemistry::File::MDLMol         0.15
-    Chemistry::File::SMILES         0.40
-    Chemistry::File::PDB            0.15
-    Chemistry::File::Mopac          0.10
-    Chemistry::File::SMARTS         0.10
-    Chemistry::Mok                  0.21
+    Chemistry::File::MDLMol         0.16
+    Chemistry::File::SMILES         0.41
+    Chemistry::File::PDB            0.20
+    Chemistry::MidasPattern         0.10
+    Chemistry::File::Mopac          0.15
+    Chemistry::File::SMARTS         0.11
+    Chemistry::File::XYZ            0.10
+    Chemistry::Mok                  0.22
 ));
 
 check_nmake();
 
 &WriteAll();
 
-
-__END__
-# dirty hack to make sure Scalar-List-Utils tests pass
-# mkdir "Scalar-List-Utils-1.14/blib", 0755;
 

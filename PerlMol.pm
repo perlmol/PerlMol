@@ -1,11 +1,9 @@
 package PerlMol;
 
-$VERSION = '0.2400';
+$VERSION = '0.2500';
 # $Id$
 
 1;
-
-__END__
 
 =head1 NAME
 
@@ -51,6 +49,12 @@ The following modules are indented according to the class hierarchy:
 
 =item L<Chemistry::Pattern>
 
+=over
+
+=item L<Chemistry::MidasPattern>
+
+=back
+
 =item L<Chemistry::Domain>
 
 =item L<Chemistry::MacroMol>
@@ -85,6 +89,8 @@ The following modules are indented according to the class hierarchy:
 
 =item L<Chemistry::File::MDLMol>
 
+=item L<Chemistry::File::MidasPattern>
+
 =item L<Chemistry::File::Mopac>
 
 =item L<Chemistry::File::PDB>
@@ -94,6 +100,8 @@ The following modules are indented according to the class hierarchy:
 =item L<Chemistry::File::SMARTS>
 
 =item L<Chemistry::File::SMILES>
+    
+=item L<Chemistry::File::XYZ>
     
 =back
 
@@ -111,6 +119,8 @@ These are auxiliary modules for which object classes seemed overkill
 
 =item L<Chemistry::Bond::Find>
 
+=item L<Chemistry::InternalCoords::Builder>
+
 =item L<Chemistry::Ring::Find>
 
 =item L<Chemistry::Canonicalize>
@@ -121,7 +131,7 @@ These are auxiliary modules for which object classes seemed overkill
 
 =over
 
-=item L<mok>
+=item L<mok> - an AWK for molecules
 
 =back
 
@@ -135,24 +145,26 @@ These are auxiliary modules for which object classes seemed overkill
 
 =head1 VERSION INFORMATION
 
-This is the PerlMol bundled release version 0.2400. It includes the following
+This is the PerlMol bundled release version 0.2500. It includes the following
 distributions:
 
-    Math-VectorReal                 1.02
-    Statistics-Regression           0.15
-    Chemistry-Mol                   0.24
-    Chemistry-MacroMol              0.05
-    Chemistry-InternalCoords        0.11
-    Chemistry-Ring                  0.11
-    Chemistry-Canonicalize          0.10
-    Chemistry-Pattern               0.21
-    Chemistry-Bond-Find             0.21
-    Chemistry-File-MDLMol           0.15
-    Chemistry-File-SMILES           0.40
-    Chemistry-File-PDB              0.15
-    Chemistry-File-Mopac            0.10
-    Chemistry-File-SMARTS           0.10
-    Chemistry-Mok                   0.21
+    Math-VectorReal                1.02
+    Statistics-Regression          0.15
+    Chemistry-Mol                  0.25
+    Chemistry-MacroMol             0.06
+    Chemistry-InternalCoords       0.16
+    Chemistry-Ring                 0.15
+    Chemistry-Canonicalize         0.10
+    Chemistry-Pattern              0.21
+    Chemistry-Bond-Find            0.21
+    Chemistry-File-MDLMol          0.16
+    Chemistry-File-SMILES          0.41
+    Chemistry-File-PDB             0.20
+    Chemistry-MidasPattern         0.10
+    Chemistry-File-Mopac           0.15
+    Chemistry-File-SMARTS          0.11
+    Chemistry-File-XYZ             0.10
+    Chemistry-Mok                  0.22
 
 The version number of a PerlMol bundle is always the same as the version number
 of the included Chemistry-Mol distribution, plus two extra digits that
