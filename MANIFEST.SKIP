@@ -1,0 +1,7 @@
+^Makefile$
+^MANIFEST\.SKIP$
+\.swp$
+^pm_to_blib$
+^blib/
+^Makefile.old$
+^[^/]*-

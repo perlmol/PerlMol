@@ -1,0 +1,51 @@
+PerlMol version 0.2300
+======================
+
+PerlMol is a collection of Perl modules for chemoinformatics and computational
+chemistry with the philosophy that "simple things should be simple". It should
+be possible to write one-liners that use this toolkit to do meaningful
+"molecular munging". The perlmol toolkit provides objects and methods for
+representing molecules, atoms, and bonds in Perl; doing substructure matching;
+and reading and writing files in various formats.
+
+This is a bundle containing all of the modules of the PerlMol Project and their
+dependencies.
+
+CONTENTS
+    Test-Simple                 0.47
+    Scalar-List-Utils           1.14
+    Storable                    2.12
+    Text-Balanced               1.95
+    Math-VectorReal             1.02
+    Chemistry-Mol               0.23
+    Chemistry-MacroMol          0.05
+    Chemistry-InternalCoords    0.11
+    Chemistry-File-MDLMol       0.15
+    Chemistry-File-SMILES       0.33
+    Chemistry-File-PDB          0.10
+    Chemistry-File-Mopac        0.10
+    Chemistry-Pattern           0.20
+    Chemistry-Bond-Find         0.20
+    Chemistry-Mok               0.20
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+Everything that you need is included in this bundle, except for perl-5.6.0 or
+a more recent version.
+
+COPYRIGHT AND LICENSE
+
+Copyright (C) 2004 Ivan Tubert <itub@cpan.org>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
+
