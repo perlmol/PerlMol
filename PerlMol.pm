@@ -1,6 +1,6 @@
 package PerlMol;
 
-$VERSION = '0.2600';
+$VERSION = '0.3200';
 # $Id$
 
 1;
@@ -155,45 +155,56 @@ These are auxiliary modules for which object classes seemed overkill
 
 =head2 Publications
 
-Publications
-
 =over
-
-=item *
-
-F. Rosselló, G. Valiente. Chemical Graphs, Chemical Reaction Graphs, and
-Chemical Graph Transformation. To appear in Proc. 2nd Int. Workshop on
-Graph-Based Tools, Electronic Notes in Computer Science 2004 (abstract
-available at L<http://www.lsi.upc.es/%7Evaliente/abs-grabats-2004.html>).
 
 =item *
 
 Tubert-Brohman, I. Perl and Chemistry. The Perl Journal 2004-06 (subscription
 required) 
 
+=item *
+
+Cozens, S. Molecular Biology With Perl. The Perl Journal 2004, 8[8], 15-19 
+(L<http://www.tpj.com/documents/s=7618/tpj0408/>; requires subscription)
+
+=item *
+
+F. Rosselló, G. Valiente. Chemical Graphs, Chemical Reaction Graphs, and
+Chemical Graph Transformation. To appear in Proc. 2nd Int. Workshop on
+Graph-Based Tools, Electronic Notes in Computer Science 2004 (abstract:
+L<http://www.lsi.upc.es/%7Evaliente/abs-grabats-2004.html>; 
+full text: L<http://tfs.cs.tu-berlin.de/grabats/Final04/valiente.pdf>).
+
+=item *
+
+Rosselló, F.; Valiente, G. Graph Transformation in Molecular Biology. (Full
+text: L<http://bioinfo.uib.es/~cesc/recerca/he-paper.pdf>).
+
 =back
 
 =head1 VERSION INFORMATION
 
-This is the PerlMol bundled release version 0.2600. It includes the following
+This is the PerlMol bundled release version 0.3200. It includes the following
 distributions:
 
     Chemistry-Bond-Find             0.21
     Chemistry-Canonicalize          0.10
-    Chemistry-File-MDLMol           0.17
+    Chemistry-File-MDLMol           0.19
     Chemistry-File-Mopac            0.15
     Chemistry-File-PDB              0.20
     Chemistry-File-SLN              0.10
-    Chemistry-File-SMARTS           0.20
-    Chemistry-File-SMILES           0.42
+    Chemistry-File-SMARTS           0.21
+    Chemistry-File-SMILES           0.43
     Chemistry-File-XYZ              0.11
     Chemistry-FormulaPattern        0.10
-    Chemistry-InternalCoords        0.17
+    Chemistry-InternalCoords        0.18
+    Chemistry-Isotope               0.10
     Chemistry-MacroMol              0.06
     Chemistry-MidasPattern          0.10
-    Chemistry-Mok                   0.23
-    Chemistry-Mol                   0.26
+    Chemistry-Mok                   0.24
+    Chemistry-Mol                   0.32
     Chemistry-Pattern               0.25
+    Chemistry-Reaction              0.02
     Chemistry-Ring                  0.18
     Math-VectorReal                 1.02
     Parse-Yapp                      1.05
@@ -214,7 +225,7 @@ Ivan Tubert-Brohman E<lt>itub@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2004 Ivan Tubert.-Brohman All rights reserved. This program is
+Copyright (c) 2005 Ivan Tubert.-Brohman All rights reserved. This program is
 free software; you can redistribute it and/or modify it under the same terms as
 Perl itself.
 
