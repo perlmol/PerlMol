@@ -1,5 +1,34 @@
 Revision history for PerlMol
 
+0.3400
+    NEW!!! Added an examples/ directory
+
+    New distributions:
+        Chemistry-File-VRML             0.10
+        Chemistry-3DBuilder             0.10
+    Changed versions:
+        Chemistry-Mol                   0.34
+        Chemistry-Mok                   0.25
+        Chemistry-File-SMILES           0.44
+        Chemistry-File-SMARTS           0.22
+        Chemistry-File-PDB              0.21
+        Chemistry-Pattern               0.26
+        Chemistry-MidasPattern          0.11
+    Unchanged versions:
+        Chemistry-File-MDLMol           0.19
+        Chemistry-InternalCoords        0.18
+        Chemistry-MacroMol              0.06
+        Chemistry-Ring                  0.18
+        Chemistry-Canonicalize          0.10
+        Chemistry-Bond-Find             0.21
+        Chemistry-File-SLN              0.10
+        Chemistry-FormulaPattern        0.10
+        Chemistry-File-Mopac            0.15
+        Chemistry-File-XYZ              0.11
+        Math-VectorReal                 1.02
+        Statistics-Regression           0.15
+        Parse-Yapp                      1.05
+
 0.3200  Mar 04 2005
     New distributions:
         Chemistry-Reaction              0.02
