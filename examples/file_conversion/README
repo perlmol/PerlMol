@@ -19,7 +19,6 @@ Options:
     -n      include name (only for writing SMILES)
 
 Available file formats:
-    boss
     dumper
     formula
     formula_pattern

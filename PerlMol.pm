@@ -1,6 +1,6 @@
 package PerlMol;
 
-$VERSION = '0.3200';
+$VERSION = '0.3500';
 # $Id$
 
 1;
@@ -33,7 +33,7 @@ What follows is an index of the relevant documentation.
 
 =over
 
-=item L<Chemistry::Tutorial>
+=item L<Chemistry::Tutorial> - A good place to start reading the documentation.
 
 =back
 
@@ -111,6 +111,8 @@ The following modules are indented according to the class hierarchy:
 
 =item L<Chemistry::File::SMILES>
     
+=item L<Chemistry::File::VRML>
+
 =item L<Chemistry::File::XYZ>
     
 =back
@@ -126,6 +128,8 @@ The following modules are indented according to the class hierarchy:
 These are auxiliary modules for which object classes seemed overkill
 
 =over
+
+=item L<Chemistry::3DBuilder>
 
 =item L<Chemistry::Bond::Find>
 
@@ -170,10 +174,11 @@ Cozens, S. Molecular Biology With Perl. The Perl Journal 2004, 8[8], 15-19
 =item *
 
 F. Rosselló, G. Valiente. Chemical Graphs, Chemical Reaction Graphs, and
-Chemical Graph Transformation. To appear in Proc. 2nd Int. Workshop on
-Graph-Based Tools, Electronic Notes in Computer Science 2004 (abstract:
-L<http://www.lsi.upc.es/%7Evaliente/abs-grabats-2004.html>; 
-full text: L<http://tfs.cs.tu-berlin.de/grabats/Final04/valiente.pdf>).
+Chemical Graph Transformation. 2nd Int. Workshop on Graph-Based Tools,
+Electronic Notes in Computer Science 2005, 127, 157-166. (abstract:
+L<http://www.lsi.upc.es/%7Evaliente/abs-grabats-2004.html>; preprint full text:
+L<http://tfs.cs.tu-berlin.de/grabats/Final04/valiente.pdf>; published version:
+L<http://dx.doi.org/10.1016/j.entcs.2004.12.033>).
 
 =item *
 
@@ -182,28 +187,44 @@ text: L<http://bioinfo.uib.es/~cesc/recerca/he-paper.pdf>).
 
 =back
 
+=head1 EXAMPLES
+
+The "examples" directory in the PerlMol distribution file has several sample
+scripts with lots of comments and a few input and output files that show how
+one can use PerlMol for common tasks. They can also be browsed online at
+L<http://www.perlmol.org/examples/>. Some of the examples are:
+
+    * combinatorial_enumeration
+    * file_conversion
+    * molgrep
+    * pdb_viewer
+    * peptide_builder
+    * polar_surface_area 
+
 =head1 VERSION INFORMATION
 
-This is the PerlMol bundled release version 0.3200. It includes the following
+This is the PerlMol bundled release version 0.3500. It includes the following
 distributions:
 
+    Chemistry-3DBuilder             0.10
     Chemistry-Bond-Find             0.21
     Chemistry-Canonicalize          0.10
-    Chemistry-File-MDLMol           0.19
+    Chemistry-File-MDLMol           0.20
     Chemistry-File-Mopac            0.15
-    Chemistry-File-PDB              0.20
+    Chemistry-File-PDB              0.21
     Chemistry-File-SLN              0.10
-    Chemistry-File-SMARTS           0.21
-    Chemistry-File-SMILES           0.43
+    Chemistry-File-SMARTS           0.22
+    Chemistry-File-SMILES           0.44
+    Chemistry-File-VRML             0.10
     Chemistry-File-XYZ              0.11
     Chemistry-FormulaPattern        0.10
     Chemistry-InternalCoords        0.18
-    Chemistry-Isotope               0.10
+    Chemistry-Isotope               0.11
     Chemistry-MacroMol              0.06
-    Chemistry-MidasPattern          0.10
-    Chemistry-Mok                   0.24
-    Chemistry-Mol                   0.32
-    Chemistry-Pattern               0.25
+    Chemistry-MidasPattern          0.11
+    Chemistry-Mok                   0.25
+    Chemistry-Mol                   0.35
+    Chemistry-Pattern               0.26
     Chemistry-Reaction              0.02
     Chemistry-Ring                  0.18
     Math-VectorReal                 1.02
@@ -225,7 +246,7 @@ Ivan Tubert-Brohman E<lt>itub@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2005 Ivan Tubert.-Brohman All rights reserved. This program is
+Copyright (c) 2005 Ivan Tubert-Brohman All rights reserved. This program is
 free software; you can redistribute it and/or modify it under the same terms as
 Perl itself.
 

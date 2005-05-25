@@ -1,21 +1,68 @@
 Revision history for PerlMol
 
-0.3400
+0.3500  May 24 2005
     NEW!!! Added an examples/ directory
 
     New distributions:
         Chemistry-File-VRML             0.10
         Chemistry-3DBuilder             0.10
+
     Changed versions:
-        Chemistry-Mol                   0.34
+
+        Chemistry-Mol                   0.35
+            - Added formal_radical atom property.
+            - Compatibility with Storable-2.14, which already takes care of
+              weak references.
+            - calc_implicit_hydrogens, add_implicit_hydrogens
+            - Fixed $atom->bonds duplication on $mol->separate (bug 1173237)
+            - New method: safe_clone
+            - Fixed spurious warnings in sprout_hydrogens (bug 1157393)
+            - Added a test for incompatible Chemistry::File::SMILES versions.
+
         Chemistry-Mok                   0.25
+            - Read one molecule at a time using the Chemistry-Mol-0.30 
+              interface.
+            - New special variable $FH
+            - Added support for Chemistry::3DBuilder (-3 command-line option)
+            - Add #line to the generated code so that errors give more 
+              meaningful line numbers.
+            - Fixed parsing bug where the first block used an explicit pattern
+              language
+            - Restructured Chemistry::Mok to be more object-oriented: 
+            - WARNING: the mok object is now a hash reference instead of an 
+              array reference. This may affect derived classes.
+
         Chemistry-File-SMILES           0.44
+            - Fixed memory leak that prevented the last atom from being garbage
+              collected.
+
         Chemistry-File-SMARTS           0.22
+            - Added the original SMARTS string as the $patt->name property.
+            - Added support for atom mapping numbers
+
         Chemistry-File-PDB              0.21
+            - Changed parse_file to read_mol
+            - Read multi-model files (each model read as one molecule)
+            - Read chain id and insertion code
+
         Chemistry-Pattern               0.26
+            - Fixed mapping bug for overlap => 0
+
         Chemistry-MidasPattern          0.11
+            - Chain support.
+            - Be more lenient with whitespace.
+            - Refactored parsing and execution.
+
+        Chemistry-File-MDLMol           0.20
+            - Added support for charges and radicals.
+            - Add implicit hydrogens on read.
+            - Support for some query properties: atom lists, bond topology, and
+              bond types.
+
+        Chemistry-Isotope               0.11
+            - Added natural abundance table
+
     Unchanged versions:
-        Chemistry-File-MDLMol           0.19
         Chemistry-InternalCoords        0.18
         Chemistry-MacroMol              0.06
         Chemistry-Ring                  0.18
@@ -25,6 +72,7 @@ Revision history for PerlMol
         Chemistry-FormulaPattern        0.10
         Chemistry-File-Mopac            0.15
         Chemistry-File-XYZ              0.11
+        Chemistry-Reaction              0.02
         Math-VectorReal                 1.02
         Statistics-Regression           0.15
         Parse-Yapp                      1.05

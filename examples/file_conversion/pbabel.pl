@@ -60,7 +60,7 @@ my ($input_file, $output_file) = @ARGV;
 # read the input file
 my @mols = Chemistry::Mol->read($input_file, 
     format   => $input_format,
-    kekulize => ! $no_kekulize,  # only used by SMILES
+    kekulize => ! $no_kekulize,     # only used by SMILES
 );
 
 # do optional procession on the molecules
@@ -73,8 +73,9 @@ for my $mol (@mols) {
 # write the output file
 $mols[0]->write($output_file, 
     format => $output_format, 
-    mols => \@mols, # only used by multi-molecule files such as SMILES and SDF
-    name => $name,              # only used by SMILES
+    mols   => \@mols,           # only used by multi-molecule files 
+                                # such as SMILES and SDF
+    name   => $name,            # only used by SMILES
     unique => $unique,          # only used by SMILES
 );
 
